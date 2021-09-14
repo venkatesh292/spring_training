@@ -17,6 +17,8 @@ import java.io.File;
 @EnableIntegration
 public class SpringIntegrationConfig {
 
+	// FileInputChanner integration example
+	
     @Bean
     @InboundChannelAdapter(value = "fileInputChannel", poller = @Poller(fixedDelay = "1000"))
     public FileReadingMessageSource fileReadingMessageSource() {
